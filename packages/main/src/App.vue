@@ -4,7 +4,23 @@
     <router-link to="/about">About</router-link>
   </nav>
   <router-view />
+  <div>===========</div>
+  <div @click="open">点击</div>
 </template>
+
+<script>
+import { defineComponent } from "vue";
+export default defineComponent({
+  setup() {
+    function open() {
+      document.execCommand("print");
+    }
+    return {
+      open,
+    };
+  },
+});
+</script>
 
 <style lang="less">
 #app {

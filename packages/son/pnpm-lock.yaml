@@ -15,6 +15,7 @@ specifiers:
   eslint-config-prettier: ^8.3.0
   eslint-plugin-prettier: ^4.0.0
   eslint-plugin-vue: ^8.0.3
+  external-remotes-plugin: ^1.0.0
   less: ^4.0.0
   less-loader: ^8.0.0
   prettier: ^2.4.1
@@ -29,6 +30,7 @@ specifiers:
 
 dependencies:
   core-js: registry.npmmirror.com/core-js/3.23.3
+  external-remotes-plugin: registry.npmmirror.com/external-remotes-plugin/1.0.0_webpack@5.73.0
   vue: registry.npmmirror.com/vue/3.2.37
   vue-class-component: registry.npmmirror.com/vue-class-component/8.0.0-rc.1_vue@3.2.37
   vue-loader: registry.npmmirror.com/vue-loader/17.0.0_webpack@5.73.0
@@ -4753,6 +4755,18 @@ packages:
       vary: registry.npmmirror.com/vary/1.1.2
     dev: true
 
+  registry.npmmirror.com/external-remotes-plugin/1.0.0_webpack@5.73.0:
+    resolution: {integrity: sha512-19cfGfzmPMXkRNpyqOHgndNB07vjk1G1V7IuyixBw8Z1QTc/IOhINy9TbWzDRPTmj64e3STTI1MJE0gI58p7YA==, registry: http://10.0.10.59:7001/, tarball: https://registry.npmmirror.com/external-remotes-plugin/-/external-remotes-plugin-1.0.0.tgz}
+    id: registry.npmmirror.com/external-remotes-plugin/1.0.0
+    name: external-remotes-plugin
+    version: 1.0.0
+    peerDependencies:
+      webpack: ^5
+    dependencies:
+      webpack: registry.npmmirror.com/webpack/5.73.0_webpack-cli@4.10.0
+      webpack-sources: registry.npmmirror.com/webpack-sources/2.3.1
+    dev: false
+
   registry.npmmirror.com/fast-deep-equal/3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==, registry: http://10.0.10.59:7001/, tarball: https://registry.npmmirror.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz}
     name: fast-deep-equal
@@ -7891,6 +7905,12 @@ packages:
       websocket-driver: registry.npmmirror.com/websocket-driver/0.7.4
     dev: true
 
+  registry.npmmirror.com/source-list-map/2.0.1:
+    resolution: {integrity: sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==, registry: http://10.0.10.59:7001/, tarball: https://registry.npmmirror.com/source-list-map/-/source-list-map-2.0.1.tgz}
+    name: source-list-map
+    version: 2.0.1
+    dev: false
+
   registry.npmmirror.com/source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==, registry: http://10.0.10.59:7001/, tarball: https://registry.npmmirror.com/source-map-js/-/source-map-js-1.0.2.tgz}
     name: source-map-js
@@ -8833,6 +8853,16 @@ packages:
       clone-deep: registry.npmmirror.com/clone-deep/4.0.1
       wildcard: registry.npmmirror.com/wildcard/2.0.0
     dev: true
+
+  registry.npmmirror.com/webpack-sources/2.3.1:
+    resolution: {integrity: sha512-y9EI9AO42JjEcrTJFOYmVywVZdKVUfOvDUPsJea5GIr1JOEGFVqwlY2K098fFoIjOkDzHn2AjRvM8dsBZu+gCA==, registry: http://10.0.10.59:7001/, tarball: https://registry.npmmirror.com/webpack-sources/-/webpack-sources-2.3.1.tgz}
+    name: webpack-sources
+    version: 2.3.1
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      source-list-map: registry.npmmirror.com/source-list-map/2.0.1
+      source-map: registry.npmmirror.com/source-map/0.6.1
+    dev: false
 
   registry.npmmirror.com/webpack-sources/3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==, registry: http://10.0.10.59:7001/, tarball: https://registry.npmmirror.com/webpack-sources/-/webpack-sources-3.2.3.tgz}
